@@ -1,3 +1,5 @@
 // Mostrar en consola un mensaje que indique cuantos argumentos fueron pasados por la terminal
-const args= process.argv.splice(2)
-console.log("El array de argumentos tiene: ", args.length, "elementos.");
+
+var colors = require("colors")
+const args = process.argv.splice(2);
+console.log(colors.bgGreen(`El array de argumentos tiene:  ${args.length} elementos.`));
