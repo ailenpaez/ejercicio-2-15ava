@@ -2,4 +2,5 @@
 
 var colors = require("colors")
 const args = process.argv.splice(2);
+console.log(new Date().toLocaleString());
 console.log(colors.bgGreen(`El array de argumentos tiene:  ${args.length} elementos.`));
